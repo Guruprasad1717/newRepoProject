@@ -2,115 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>transition</title>
+    <title>Document</title>
     <style>
-        div{
-/*            
-            border: 5px solid red;
-            width:100px;
-            height: 100px;
-            margin: 50px; */
-            /* transition-delay: 1s; */
-            /* transition-duration:4s ; */
-            /* transition-timing-function: linear; */
-            /* transition-timing-function: ease-in; */
-            /* transition-timing-function: ease-in-out; */
-         /* transition:width 4s,height 10s ;
-         transition-property:height; */
+        #a{
+            border: 2px solid blue;
+            width: 400px;
+            height:20px;
+            border-radius: 10px;
+            background-color: red;
+            position: relative;
+            top: 500px;
+            left:150px;
         }
-     /* div:hover{
-         
-            width:400px;
-            height: 200px;
-            border-radius: 5px;
-            box-shadow: 5px 5px 2px blue;
+        #b{
+         border: 3px solid white;
+         width: 30px;
+         height: 30px;
+         border-radius: 100%;
+         background-color: yellow;
+         position: relative;
+            top: 605px;
+            left: 170px;
+            animation-name: one;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        #c{
+            border: 3px solid white;
+         width: 30px;
+         height: 30px;
+         border-radius: 100%;
+         background-color:red;
+         position: relative;
+            top: 566px;
+            left: 230px;
+            animation-name: two;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        #d{
+            border: 3px solid white;
+         width: 30px;
+         height: 30px;
+         border-radius: 100%;
+         background-color:pink;
+         position: relative;
+            top: 530px;
+            left: 290px;
+            animation-name: three;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        #e{
+            border: 3px solid white;
+         width: 30px;
+         height: 30px;
+         border-radius: 100%;
+         background-color:brown;
+         position: relative;
+            top: 500px;
+            left: 380px;
+            animation-name:four;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite; 
+        }
+        @keyframes one {
+            0%{ 
 
+            }
+            50%{
+                top:500px;
+            }
+            100%{
+                bottom:1500px;
+            }
+            
+        }
+        @keyframes two {
+            0%{
 
-     } */
+            }
+            50%{
+                top:400px;
+            }
+            100%{
+                bottom:700px;
+            }
+            
+        }
+        @keyframes three {
+            0%{
 
-     /* div{
-        border: 3px solid orangered;
-        width:1000px;
-        box-shadow: 3px 3px 2px orange;
-        transition: width 5s;
-        transition-timing-function: ease;
-        transition-property:width;
-        transition-duration:10s ;
-     
-       
+            }
+            50%{
+                top:300px;
+            }
+            100%{
+                bottom:55%;
+            }
+            
+        }
+        @keyframes four {
+            0%{
 
-     } */
-     div{
-        border: 3px solid red ;
-        border-radius: 10px;
-        width: 60px;
-        height: 60px;
-        transition-duration:5s ;
-        transition-timing-function: ease;
-
-     }
-     div:hover{
-
-        height: 150px;
-        border-color: rebeccapurple;
-        width: 200px;
-        border-radius: 60%;
-        margin: -10px;
-     }
-     #aa:hover{
-        border-color: rgb(255, 0, 200);
-        height: 200px;
-        width: 250px;
-        border-radius: 70%;
-        margin: -15px;
-     }
-     
-     #bb:hover{
-        border-color: blue;
-        height: 250px;
-        width: 300px;
-        border-radius: 70%;
-        margin: -20px;
-     }
-     #cc:hover{
-        border-color:greenyellow;
-        height: 300px;
-        width: 350px;
-        border-radius: 70%;
-        margin: -25px;
-     }
-     #dd:hover{
-        border-color: rgb(32, 228, 228);
-        height: 350px;
-        width: 400px;
-        border-radius: 70%;
-        margin: -30px;
-     }
-     /* #aaa:hover{
-        border-color: rgb(16, 68, 3);
-        height: 400px;
-        width: 450px;
-        border-radius: 70%;
-        margin: -35px;
-     } */
-    
-
+            }
+            50%{
+                top:200px;
+            }
+            100%{
+                bottom:55%;
+            }
+            
+        }
     </style>
 </head>
-<body>
-    
-     <div>
-      <div id="aa">
-         <div id="bb">
-          <div id="cc">
-            <div id="dd">
-               <!-- <div id="aaa"> </div> -->
-         </div>
-      </div>
-   </div>
-</div>
-</div>
+<body bgcolor="black">
+   <div id="b"></div>
+   <div id="c"></div>
+   <div id="d"></div>
+   <div id="e"></div>
+    <div id="a"></div>
 </body>
 </html>
